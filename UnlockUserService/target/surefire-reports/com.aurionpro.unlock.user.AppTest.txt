@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.aurionpro.unlock.user.AppTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.996 s - in com.aurionpro.unlock.user.AppTest

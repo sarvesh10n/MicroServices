@@ -1,0 +1,31 @@
+{
+  "uuid": "111272511112225",
+  "date_time": "10/1/2019 12:40:39 PM",
+  "open_Bal": "99",
+  "close_Bal": "100000",
+  "unclear_Bal": "2000",
+  "productName":"Product 1",
+  "trnDetail": [
+    {
+      "Tran_Date": "19-Sep-2019",
+      "Value_Date": "19-Sep-2019",
+      "ChequeNo": "",
+      "Tran_Details": "Tran08_5",
+      "Amount": "3000.00",
+      "DR_CR_Flag": "C",
+      "Running_Balance": "7412",
+      "Clearing_Branch": "900",
+      "Tran_Desc": "",
+      "Opening_Balance": "",
+      "Journal_sequence": "",
+      "Transaction_Code": "",
+      "Description": "DESC5",
+      "References": "REF5",
+      "Corporate_Reference_No": "",
+      "Remitter_Info": "",
+      "Benificiary_Info": "",
+      "Sender_to_reciver_Info": "",
+      "accountNumber": "12345"
+    }
+  ]
+}

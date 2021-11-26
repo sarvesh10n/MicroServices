@@ -107,6 +107,7 @@
 		      <excludes><exclude>**/*.java</exclude></excludes>
 		    </resource>
 		 </resources>
-	 </build>
+	</build>
+
 
 </project>

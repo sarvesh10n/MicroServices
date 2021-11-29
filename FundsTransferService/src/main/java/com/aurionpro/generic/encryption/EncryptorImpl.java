@@ -4,6 +4,7 @@ import java.io.UnsupportedEncodingException;
 import java.security.InvalidKeyException;
 import java.security.Key;
 import java.security.NoSuchAlgorithmException;
+import java.util.Base64;
 
 import javax.crypto.Cipher;
 import javax.crypto.IllegalBlockSizeException;
@@ -69,7 +70,7 @@ public class EncryptorImpl implements Encryptor, EncryptionKeyManager {
             byte[] encryptedData = encryptCipher.doFinal(utf);
 
             // Encode bytes to base64 to get a string
-            return new sun.misc.BASE64Encoder().encode(encryptedData);
+            return Base64.getEncoder().encodeToString(encryptedData);
 
         } catch (javax.crypto.BadPaddingException e) {
             throw new EncryptionException(e);
@@ -105,8 +106,8 @@ public class EncryptorImpl implements Encryptor, EncryptionKeyManager {
             decryptCipher.init(Cipher.DECRYPT_MODE, key);
 
             // Decode base64 to get bytes
-            sun.misc.BASE64Decoder decoder = new sun.misc.BASE64Decoder();
-            byte[] decodedData = decoder.decodeBuffer(encryptedData);
+            byte[] decodedData = Base64.getDecoder().decode(encryptedData);
+
 
             // Decrypt
             byte[] originalData = decryptCipher.doFinal(decodedData);
